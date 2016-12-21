@@ -1,0 +1,302 @@
+.updates {
+  margin-bottom: 127px;
+  width: 87.5%;
+  margin-top: 47px;
+  margin-left: 6%;
+  background-color: #f9f9f9;
+  &__section {
+    min-width: 320px;
+  }
+
+  &__name {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-shadow: 0.5px 0.9px 0 white;
+    color: rgb(69, 69, 69);
+    font-family: league_gothic, Arial, sans-serif;
+    font-size: 1.875rem;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  &__post {
+    height: 24px;
+    margin-left: 21%;
+    width: 54.75%;
+    overflow: hidden;
+    & > a {
+      text-shadow: 0.5px 0.9px 0 white;
+      color: rgb(69, 69, 69);
+      font-family: open_sans_extrabold, Arial, sans-serif;
+      font-size: 1rem;
+      line-height: 24px;
+      text-decoration: none;
+    }
+    & > a:hover {
+      text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+    }
+  }
+  &__date {
+    height: 22px;
+    overflow: hidden;
+    padding-bottom: 17px;
+    margin-left: 21%;
+    & > p {
+      letter-spacing: -.006rem;
+      text-shadow: 0.5px 0.9px 0 white;
+      color: rgb(69, 69, 69);
+      font-family: open_sans_light, Arial, sans-serif;
+      font-size: 1rem;
+      line-height: 24px;
+    }
+  }
+  &__more {
+    margin-top: 0;
+    margin-right: 14%;
+    float: right;
+
+    & > a {
+      text-transform: uppercase;
+      text-decoration: none;
+      text-shadow: 0.5px 0.9px 0 white;
+      color: rgb(69, 69, 69);
+      font-family: league_gothic, Arial, sans-serif;
+      font-size: 1.125rem;
+      font-weight: 400;
+      line-height: 24px;
+      &:hover {
+        text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+      }
+    }
+    &--960 {
+      display: none;
+      margin-left: 345px;
+      margin-top: 5px;
+      margin-right: 0;
+      float: left;
+
+      & > a {
+        text-transform: uppercase;
+        text-decoration: none;
+        text-shadow: 0.5px 0.9px 0 white;
+        color: rgb(69, 69, 69);
+        font-family: league_gothic, Arial, sans-serif;
+        font-size: 1.125rem;
+        font-weight: 400;
+        line-height: 24px;
+        &:hover {
+          text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+        }
+      }
+    }
+    &:hover {
+      text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+    }
+  }
+  &-upper {
+    & > .updates__img {
+      margin-top: 1px;
+      display: block;
+      float: left;
+      width: 49px;
+      height: 49px;
+      background-position: -275px -107px;
+      background-image: url("../img/sprites.png");
+    }
+  }
+  &-middle {
+    margin-top: 19px;
+    & > .updates__img {
+      clear: left;
+      //margin-top: 15px;
+      display: block;
+      float: left;
+      width: 49px;
+      height: 49px;
+      background-position: 0 -156px;
+      background-image: url("../img/sprites.png");
+    }
+    &--960 {
+      display: none;
+      margin-top: 21px;
+      & > .updates__img {
+        clear: left;
+        //margin-top: 15px;
+        display: block;
+        float: left;
+        width: 49px;
+        height: 49px;
+        background-position: 0 -156px;
+        background-image: url("../img/sprites.png");
+      }
+    }
+  }
+  &-bottom {
+    margin-top: 25px;
+    margin-bottom: 18px;
+    & > .updates__img {
+      clear: left;
+      display: block;
+      float: left;
+      width: 49px;
+      height: 49px;
+      background-position: -54px -102px;
+      background-image: url("../img/sprites.png");
+    }
+    &--960 {
+      display: none;
+      margin-top: 18px;
+      margin-bottom: 18px;
+      & > .updates__img {
+        clear: left;
+        display: block;
+        float: left;
+        width: 49px;
+        height: 49px;
+        background-position: -54px -102px;
+        background-image: url("../img/sprites.png");
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .updates {
+    width: 71.9%;
+    margin-left: 17%;
+    &__post {
+      margin-left: 19.5%;
+      width: 75%;
+    }
+    &__date {
+      padding-bottom: 17px;
+      margin-left: 19.5%;
+      width: 75%;
+    }
+    &__more {
+      margin-top: 2px;
+      margin-right: 2%;
+    }
+    &-upper {
+      & > .updates__img {
+        margin-top: 0;
+        background-position: -52px -154px;
+        background-image: url("../img/sprites.png");
+      }
+    }
+    &-middle {
+      margin-top: 22px;
+      & > .updates__img {
+        background-position: -214px -124px;
+        background-image: url("../img/sprites.png");
+      }
+    }
+    &-bottom {
+      margin-top: 20px;
+      & > .updates__img {
+        background-position: -107px -136px;
+        background-image: url("../img/sprites.png");
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  .updates {
+    margin-top: 91px;
+    float: left;
+    width: 43%;
+    margin-left: 13%;
+    margin-bottom: 88px;
+    &__post {
+      margin-left: 19%;
+      width: 84%;
+    }
+    &__date {
+      padding-bottom: 17px;
+      margin-left: 19%;
+      width: 76%;
+    }
+    &__more {
+      margin-top: 0;
+      margin-right: 3%;
+    }
+    &-upper {
+      & > .updates__img {
+        margin-top: 0;
+        background-position: -205px -69px;
+        background-image: url("../img/sprites.png");
+      }
+    }
+    &-middle {
+      margin-top: 22px;
+      & > .updates__img {
+        background-position: -275px -54px;
+        background-image: url("../img/sprites.png");
+      }
+    }
+    &-bottom {
+      margin-top: 20px;
+      & > .updates__img {
+        background-position: -275px -1px;
+        background-image: url("../img/sprites.png");
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .updates {
+    margin-top: 90px;
+    float: left;
+    width: 46%;
+    margin-left: 34px;
+    margin-bottom: 87px;
+    &__post {
+      margin-left: 66px;
+      width: 84%;
+    }
+    &__date {
+      padding-bottom: 17px;
+      margin-left: 66px;
+      width: 84%;
+    }
+    &__more {
+      display: none;
+      margin-top: 0;
+      margin-right: 7%;
+      &--960 {
+        display: block;
+      }
+    }
+    &-upper {
+      & > .updates__img {
+        margin-top: 0;
+        background-position: -205px -69px;
+        background-image: url("../img/sprites.png");
+      }
+    }
+    &-middle {
+      display: none;
+      margin-top: 22px;
+      & > .updates__img {
+        background-position: -275px -54px;
+        background-image: url("../img/sprites.png");
+      }
+      &--960 {
+        display: block;
+      }
+    }
+    &-bottom {
+      display: none;
+      margin-top: 20px;
+      & > .updates__img {
+        background-position: -275px -1px;
+        background-image: url("../img/sprites.png");
+      }
+      &--960 {
+        display: block;
+      }
+    }
+
+  }
+}

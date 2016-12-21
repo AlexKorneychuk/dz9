@@ -1,0 +1,233 @@
+.slider {
+  min-width: 320px;
+  max-width: 960px;
+  margin: 0 auto;
+  &__wrap {
+    min-width: 320px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    margin-top: 184px;
+    font-family: league_gothic, Arial, sans-serif;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+    font-weight: 400;
+  }
+
+  &__name {
+    margin-left: 20%;
+    font-size: 2.25rem;
+    text-transform: capitalize;
+    color: #fefefe;
+  }
+  &__text {
+    overflow: hidden;
+    height: 20px;
+    width: 65%;
+    margin-left: 20%;
+    padding-top: 2px;
+    font-size: 1.125rem;
+    color: #edbfff;
+    letter-spacing: .003rem;
+    text-transform: uppercase;
+  }
+  &__about {
+    display: none;
+    margin-top: 10px;
+    margin-left: 5.6%;
+    width: 37%;
+    //решил не заморачиваться в боках дизайнера и сделал все одной высотой
+    height: 100px;
+    overflow: hidden;
+    color: #fff;
+    font-family: open_sans_light, Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 24px;
+  }
+  &__btn-before {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 28px;
+    height: 39px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: url("../img/header/btn-prev.png") no-repeat;
+    &:active {
+      border: none;
+      outline: none;
+      width: 28px;
+      height: 39px;
+      background: url("../img/header/btn-prev-active.png") no-repeat;
+    }
+  }
+  &__btn-after {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    width: 28px;
+    height: 39px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: url("../img/header/btn-next.png") no-repeat;
+    &:active {
+      border: none;
+      outline: none;
+      width: 28px;
+      height: 39px;
+      background: url("../img/header/btn-next-active.png") no-repeat;
+    }
+  }
+}
+
+.iphone {
+  display: none;
+}
+
+.radio__wrap {
+  margin: 0 auto;
+  max-width: 960px;
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .slider {
+    height: 246px;
+    background: rgba(0, 0, 0, .2);
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    padding-top: 93px;
+    margin-top: 90px;
+    &__wrap {
+      margin-top: 90px;
+    }
+    &__name {
+      margin-left: 8%;
+    }
+    &__text {
+      width: 45%;
+      margin-left: 8%;
+    }
+    &__btn-before {
+      top: 103px;
+      left: -1%;
+    }
+    &__btn-after {
+      top: 103px;
+      right: -1%;
+    }
+  }
+  .iphone {
+    display: block;
+    background: url("./../img/header/iphone.png") no-repeat;
+    position: absolute;
+    top: -10px;
+    right: 6.5%;
+    width: 40%;
+    height: 304px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  .slider {
+    height: 400px;
+    background: rgba(0, 0, 0, .2);
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    padding-top: 93px;
+    margin-top: 65px;
+    &__wrap {
+      margin-top: 66px;
+    }
+    &__name {
+      margin-top: 5px;
+      margin-left: 5.9%;
+      font-size: 2.92rem;
+    }
+    &__text {
+      margin-left: 5.6%;
+      font-size: 1.49rem;
+      margin-top: 7px;
+      width: 39%;
+      height: 24px;
+    }
+    &__about {
+      display: block;
+    }
+    &__btn-before {
+      top: 179px;
+      left: -.5%;
+    }
+    &__btn-after {
+      top: 178px;
+      right: .5%;
+    }
+  }
+  .iphone {
+    display: block;
+    background: url("./../img/header/iphone__hq.png") no-repeat;
+    position: absolute;
+    top: -23px;
+    right: 7%;
+    width: 274px;
+    height: 434px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .slider {
+    max-width: 960px;
+    position: relative;
+    z-index: 1;
+    margin-top: 0;
+    &__wrap {
+      margin-top: 90px;
+      clear: both;
+      background: rgba(0, 0, 0, .2);
+      width: 100%;
+      padding-top: 74px;
+      height: 400px;
+    }
+    &__name {
+      margin-top: 5px;
+      margin-left: 0;
+      font-size: 3.68rem;
+    }
+    &__text {
+      margin-left: 0;
+      font-size: 2rem;
+      margin-top: 0;
+      width: 46%;
+      height: 30px;
+    }
+    &__about {
+      margin-top: 8px;
+      margin-left: 0;
+      width: 53%;
+      display: block;
+      height: 153px;
+      font-size: 1.12rem;
+    }
+    &__btn-before {
+      display: none;
+      top: 180px;
+      left: 34%;
+    }
+    &__btn-after {
+      display: none;
+      top: 180px;
+      right: 34%;
+    }
+  }
+  .iphone {
+    display: block;
+    background: url("./../img/header/iphone__hq.png") no-repeat;
+    position: absolute;
+    top: -95px;
+    left: 617px;
+    width: 274px;
+    height: 434px;
+  }
+}

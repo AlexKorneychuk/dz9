@@ -1,0 +1,6 @@
+$ cat .gitignore
+*.psd
+*.tmp
+*.log
+node_modules/*
+.idea/*

@@ -1,0 +1,109 @@
+.slider {
+  &__radio {
+    margin-top: 80px;
+    text-align: center;
+    margin-left: 3%;
+    &--feedback {
+      margin-top: 24px;
+      margin-left: 15%;
+    }
+  }
+  &__rbtn {
+    display: none;
+    height: 16px;
+    width: 16px;
+    & + label {
+      display: inline-block;
+      cursor: pointer;
+      position: relative;
+      z-index: 150;
+      font-size: .5rem;
+    }
+    & + label:before {
+      content: "";
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      position: relative;
+      left: 0;
+      background-color: rgba(0, 0, 0, .3);
+      border-radius: 100%;
+    }
+    &:checked + label:after {
+      content: "";
+      position: absolute;
+      top: 3px;
+      left: -2px;
+      width: 10px;
+      height: 10px;
+      margin-left: 5px;
+      background: linear-gradient(to top, rgb(212, 212, 212) 0%, white 100%);
+      border-radius: 100%;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    }
+    &--feedback + label:before {
+      width: 15px;
+      height: 15px;
+      background-color: #fff;
+      border: 1px solid rgb(230, 230, 230);
+      box-shadow: 1px 1.7px 0 white;
+    }
+    &--feedback:checked + label:after {
+      position: absolute;
+      top: 3px;
+      left: -2px;
+      width: 10px;
+      height: 10px;
+      background-image: linear-gradient(to top, rgb(69, 69, 69) 0%, rgb(106, 106, 106) 100%);
+      border: 1px solid rgb(69, 69, 69);
+    }
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .slider__radio {
+    margin-top: 21px;
+    margin-left: 3%;
+    &--feedback {
+      margin-top: 23px;
+      margin-left: 3%;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  .slider__radio {
+    margin-top: 36px;
+    margin-left: 0;
+    text-align: right;
+    margin-right: 19%;
+
+    &--feedback {
+      position: absolute;
+      text-align: left;
+      top: 356px;
+      left: 157px;
+      margin-left: 0;
+      margin-top: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .slider__radio {
+    max-width: 960px;
+    margin-top: 94px;
+    margin-left: 713px;
+    text-align: left;
+    margin-right: 0;
+
+    &--feedback {
+      position: absolute;
+      text-align: left;
+      top: 356px;
+      left: 196px;
+      margin-left: 0;
+      margin-top: 0;
+    }
+  }
+}

@@ -1,0 +1,308 @@
+.news {
+  height: 667px;
+  width: 100%;
+  background-color: #ececec;
+  display: none;
+  &__section {
+    margin: 0 auto;
+    max-width: 960px;
+    min-width: 320px;
+  }
+  &__pingbuller {
+    margin-top: 102px;
+    display: none;
+    &-name {
+      text-transform: uppercase;
+      height: 36px;
+      text-shadow: 0 1px 0 white;
+      color: rgb(69, 69, 69);
+      font-family: League_Gothic, Arial, sans-serif;
+      font-size: 3rem;
+      font-weight: 400;
+      line-height: 34px;
+      &--suffix {
+        margin-left: -3%;
+        text-transform: uppercase;
+        height: 2.25rem;
+        text-shadow: 0 1px 0 white;
+        color: rgb(185, 185, 185);
+        font-family: League_Gothic, Arial, sans-serif;
+        font-size: 3rem;
+        font-weight: 400;
+        line-height: 34px;
+      }
+    }
+    &-copyright {
+      margin-top: 15px;
+      height: 15px;
+      text-shadow: 0.5px 0.9px 0 white;
+      color: rgb(197, 197, 197);
+      font-family: Georgia, Arial, sans-serif;
+      font-size: 1rem;
+      font-style: italic;
+      line-height: 24px;
+    }
+    &-text {
+      width: 100%;
+      margin-top: 15px;
+      overflow: hidden;
+      height: 120px;
+      text-shadow: 0.5px 0.9px 0 white;
+      color: rgb(120, 120, 120);
+      font-family: Open_Sans_light, Arial, sans-serif;
+      font-size: 1rem;
+      font-weight: 300;
+      line-height: 24px;
+    }
+  }
+  &__comments {
+    margin-left: 5.4%;
+    display: none;
+    &-name {
+      margin-top: 101px;
+      text-transform: uppercase;
+      text-shadow: 0.5px 0.9px 0 white;
+      color: rgb(69, 69, 69);
+      font-family: League_Gothic, Arial, sans-serif;
+      font-size: 1.87rem;
+      font-weight: 400;
+      line-height: 24px;
+    }
+    &-text {
+      margin-top: 10px;
+      overflow: hidden;
+      height: 170px;
+      width: 100%;
+      text-shadow: 0.5px 0.9px 0 white;
+      color: rgb(120, 120, 120);
+      font-family: Open_Sans_light, arial, sans-serif;
+      font-size: 1rem;
+      font-weight: 300;
+      line-height: 24px;
+    }
+  }
+  &__categories {
+    &--first {
+      display: none;
+      &-name {
+        text-transform: uppercase;
+        text-shadow: 0.5px 0.9px 0 white;
+        color: rgb(69, 69, 69);
+        font-family: League_Gothic, Arial, sans-serif;
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 24px;
+      }
+      &-text {
+        overflow: hidden;
+        height: 95px;
+        width: 91.67%;
+        text-shadow: 0.5px 0.9px 0 white;
+        color: rgb(120, 120, 120);
+        font-family: Open_Sans_light, arial, sans-serif;
+        font-size: 1rem;
+        font-weight: 300;
+        line-height: 24px;
+      }
+    }
+    &--second {
+      display: none;
+      &-name {
+        text-transform: uppercase;
+        text-shadow: 0.5px 0.9px 0 white;
+        color: rgb(69, 69, 69);
+        font-family: League_Gothic, Arial, sans-serif;
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 24px;
+      }
+      &-text {
+        overflow: hidden;
+        width: 91.67%;
+        height: 95px;
+        text-shadow: 0.5px 0.9px 0 white;
+        color: rgb(120, 120, 120);
+        font-family: Open_Sans_light, arial, sans-serif;
+        font-size: 1rem;
+        font-weight: 300;
+        line-height: 24px;
+      }
+    }
+    &--third {
+      display: none;
+      &-name {
+        text-transform: uppercase;
+        text-shadow: 0.5px 0.9px 0 white;
+        color: rgb(69, 69, 69);
+        font-family: League_Gothic, Arial, sans-serif;
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 24px;
+      }
+      &-text {
+        overflow: hidden;
+        width: 91.67%;
+        height: 95px;
+        text-shadow: 0.5px 0.9px 0 white;
+        color: rgb(120, 120, 120);
+        font-family: Open_Sans_light, arial, sans-serif;
+        font-size: 1rem;
+        font-weight: 300;
+        line-height: 24px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .news {
+    display: block;
+
+    &__comments {
+      display: none;
+    }
+    &__categories {
+      &--first {
+        margin-left: 3.5%;
+        padding-top: 78px;
+        display: block;
+        &-name {
+
+        }
+        &-text {
+          letter-spacing: -.003rem;
+          margin-top: 9px;
+          width: 95.67%;
+
+        }
+      }
+      &--second {
+        margin-top: 57px;
+        margin-left: 3.5%;
+        display: block;
+        &-name {
+
+        }
+        &-text {
+          letter-spacing: -.003rem;
+          margin-top: 9px;
+          width: 95.67%;
+
+        }
+      }
+      &--third {
+        margin-top: 60px;
+        margin-left: 3.5%;
+        display: block;
+        &-name {
+
+        }
+        &-text {
+          letter-spacing: -.003rem;
+          margin-top: 9px;
+          width: 95.67%;
+
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  .news {
+    height: 397px;
+    text-align: left;
+    display: block;
+
+    &__comments {
+      display: none;
+    }
+    &__categories {
+      &--first {
+        width: 28%;
+        margin-left: 2.5%;
+        padding-top: 102px;
+        display: inline-block;
+        &-name {
+
+        }
+        &-text {
+          height: 169px;
+          letter-spacing: -.003rem;
+          margin-top: 9px;
+          width: 98%;
+
+        }
+      }
+      &--second {
+        width: 28%;
+
+        margin-top: 57px;
+        margin-left: 6.2%;
+        display: inline-block;
+        &-name {
+
+        }
+        &-text {
+          height: 169px;
+          letter-spacing: -.003rem;
+          margin-top: 9px;
+          width: 98%;
+
+        }
+      }
+      &--third {
+        width: 28%;
+        margin-top: 60px;
+        margin-left: 5%;
+        display: inline-block;
+        &-name {
+
+        }
+        &-text {
+          height: 169px;
+          letter-spacing: -.003rem;
+          margin-top: 9px;
+          width: 98%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .news {
+    float: left;
+    height: 397px;
+    text-align: left;
+    display: block;
+    &__pingbuller {
+      float: left;
+      width: 30%;
+      display: block;
+    }
+    &__comments {
+      float: left;
+      width: 30%;
+      display: block;
+    }
+    &__categories {
+      &--third {
+        margin-left: 5.5%;
+        margin-top: 100px;
+        float: left;
+        width: 29%;
+        display: block;
+        &-name {
+          font-size: 1.87rem;
+          margin-top: 1px;
+        }
+        &-text {
+          height: 169px;
+          margin-top: 9px;
+          width: 98%;
+        }
+      }
+    }
+  }
+}
